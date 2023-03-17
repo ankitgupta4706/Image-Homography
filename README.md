@@ -12,5 +12,10 @@ Homography is a mathematical transformation that relates the corresponding point
 <img width="338" alt="Sample Output" src="https://user-images.githubusercontent.com/81372735/225911729-378c73cd-6b6d-4633-b0b5-0672410ff184.PNG">
 
 ** Steps to use **
-
+- Install feature extractor from https://www.vlfeat.org/applications/apps.html, required for matlab script.
+- pip install -requirements.txt
+- Open 'Matlab Files' folder run "Extract_SIFT_features.m". It takes input as images fro "Images" folder and returns image features as output and saves them in "Images Features" Folder.
+- Open 'Python Files' folder run "Calculate_Hmatrix.py". It takes input as feature vectors and returns H matrices as outputs and saves them in "H matrix" Folder.
+- run "Generate Images.py" . It takes input as H matrices and returns warped images w.r.t image03 coordinate (reference frame) as outputs and saves them in "Output" Folder.
+- run "Final_blend.py or Final_wo_blend.py".It takes canvases as inputs and returns blended images/ without blended images and saves them in "Output" Folder.
 
